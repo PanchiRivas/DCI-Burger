@@ -7,9 +7,14 @@ S: vendedor.pagar()
 almacenar hamb
 S:Linea 25 (int hamburProducidas =0)
 cliente cada 2min (add lista = fila)
+S:
 si hay mas de 3 personas, que se active la funcion (quedarse o irse) 1/4 random
+S:
 periodo total de 4hrs
+S:
 las personas no pueden ser atendidas si no hay las suficientes hamburguesas para el pedido.
+funcion de hacer pedido: cuantas hamb, pagar
+
 Preguntas:
 a) El número total de de clientes que llegan, y el número total de clientes perdidos.
 b) El tiempo medio que debe esperar un cliente para tener su pedido.
@@ -29,6 +34,11 @@ namespace burgerDCI{
 
             //simulacion de la fila de clientes
             List<string> fila = new List<string>();
+            List<string> clientesAtendidos = new List<string>();
+            List<string> clientesPerdidos = new List<string>();
+
+            //matriz que almacene cuanto demora en envolver y cobrar
+            //...
 
             //manejo de clientes
             fila.Add("cliente");
@@ -68,6 +78,10 @@ namespace burgerDCI{
         public int pedidoCliente(){
             //probabilidades
             return 0;
+        }
+
+        public bool quedarseIrse(){
+            return true;
         }
     }
 }
